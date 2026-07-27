@@ -1,0 +1,39 @@
+.relative-box {
+  height: 500px;
+  border: 2px solid black;
+  padding: 10px;
+  position: relative;
+}
+
+.static {
+  background-color: lightgray;
+}
+
+.relative {
+    height: 200px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: lightblue;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background-color: lightgreen;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: lightcoral;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: lightyellow;
+}
+

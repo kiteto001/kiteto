@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #181c37;
+    width: 100%;
+    height: 80px;
+}
+
+.logo a{
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    background: linear-gradient(90deg, #7272da 0%, #e84aa9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+  
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #181c37;
+    width: 100%;
+    height: 100px;
+}
+
+
+}
