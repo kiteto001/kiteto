@@ -12,6 +12,21 @@
     background-color: #181c37;
     width: 100%;
     height: 80px;
+    position: relative;
+    overflow: visible;
+}
+
+.profile-photo{
+    position: absolute;
+    left: 50%;
+    bottom: -55px;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 110px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .logo a{

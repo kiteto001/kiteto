@@ -3,30 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portifolio.css">
-    <title>Home</title>
-
+    <meta name="description" content="John Kiteto — IT student, web developer, and software enthusiast.">
+    <title>John Kiteto | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="header">
+    <header class="site-header" id="home">
+        <div class="header-content container">
+            <img class="profile-image" src="me2.jpeg" alt="Portrait of John Kiteto">
+            <div class="identity">
+                <p class="eyebrow">Personal portfolio</p>
+                <h1>John Kiteto</h1>
+                <p>IT Student <span>•</span> Web Developer <span>•</span> Software Enthusiast</p>
+            </div>
+        </div>
+    </header>
 
-        <div class="logo">
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+    </button>
 
-            <a href="index.html"> JK </a>
+    <nav class="side-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" aria-current="page"><span class="nav-icon">⌂</span><span>Home</span></a>
+        <a class="nav-link" href="#about"><span class="nav-icon">◌</span><span>About</span></a>
+        <a class="nav-link" href="#skills"><span class="nav-icon">✦</span><span>Skills</span></a>
+        <a class="nav-link" href="#projects"><span class="nav-icon">▣</span><span>Projects</span></a>
+        <a class="nav-link" href="#contact"><span class="nav-icon">✉</span><span>Contact</span></a>
+    </nav>
 
+    <main>
+        <section class="hero section" id="about" aria-labelledby="intro-title">
+            <div class="intro-card">
+                <p class="section-label">Welcome</p>
+                <h2 id="intro-title">Building thoughtful digital experiences.</h2>
+                <p>Hello! I'm John Kiteto, an IT student passionate about creating clean and user-friendly web applications. I enjoy learning modern technologies, solving problems through code, and continuously improving my software development skills.</p>
             </div>
 
-            <nav class="nav-links">
+            <div class="laptop-gallery" aria-label="Decorative laptop illustrations">
+                <article class="laptop-card laptop-purple">
+                    <div class="laptop-screen"><span>&lt;/&gt;</span></div><div class="laptop-base"></div>
+                    <p>Web craft</p>
+                </article>
+                <article class="laptop-card laptop-pink">
+                    <div class="laptop-screen"><span>{ }</span></div><div class="laptop-base"></div>
+                    <p>Problem solving</p>
+                </article>
+                <article class="laptop-card laptop-dark">
+                    <div class="laptop-screen"><span>01</span></div><div class="laptop-base"></div>
+                    <p>Always learning</p>
+                </article>
+            </div>
+        </section>
 
-                <a href="about.html"> About </a>
-                <a href="#"> Projects </a>
-                <a href="#"> Contact </a>
+        <section class="support-section section" id="skills">
+            <p class="section-label">Skills</p>
+            <h2>Curious, reliable, and detail-oriented.</h2>
+            <div class="skill-list"><span>HTML &amp; CSS</span><span>JavaScript</span><span>Responsive Design</span><span>Problem Solving</span></div>
+        </section>
 
+        <section class="support-section section" id="projects">
+            <p class="section-label">Projects</p>
+            <h2>Selected work is on its way.</h2>
+        </section>
 
-            </nav>
+        <section class="support-section section" id="contact">
+            <p class="section-label">Contact</p>
+            <h2>Let's create something useful together.</h2>
+            <a class="contact-link" href="mailto:john@example.com">john@example.com</a>
+        </section>
+    </main>
 
-        </header>
-
+    <script src="script.js"></script>
 </body>
 </html>
