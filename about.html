@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about me</title>
+    <meta name="description" content="About John Kiteto, an IT student and aspiring software developer.">
+    <title>About | John Kiteto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav>
-        <a href="about.html">About me</a>
-        <a href="index.html">Home</a>
+    <header class="site-header">
+        <div class="header-content container">
+            <img class="profile-image" src="Bazuu2.jpeg" alt="Portrait of John Kiteto">
+            <div class="identity">
+                <p class="eyebrow">Get to know me</p>
+                <h1>John Kiteto</h1>
+                <p>IT Student <span>•</span> Web Developer <span>•</span> Software Enthusiast</p>
+            </div>
+        </div>
+    </header>
 
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="side-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+        <a class="nav-link active" href="about.html" aria-current="page"><span class="nav-icon">◌</span><span>About</span></a>
+        <a class="nav-link" href="index.html#skills"><span class="nav-icon">✦</span><span>Skills</span></a>
+        <a class="nav-link" href="index.html#projects"><span class="nav-icon">▣</span><span>Projects</span></a>
+        <a class="nav-link" href="index.html#contact"><span class="nav-icon">✉</span><span>Contact</span></a>
     </nav>
 
-    <h1 id="Special">About Page</h1>
-    <p>This is the about page content.</p>
+    <main>
+        <section class="hero section" aria-labelledby="about-title">
+            <div class="about-layout">
+                <div class="about-media" aria-label="Photos of John Kiteto">
+                    <figure class="about-image-card">
+                        <img src="bazuu3.jpeg" alt="John Kiteto outdoors">
+                    </figure>
+                    <figure class="about-image-card">
+                        <img src="bazuu4.jpeg" alt="John Kiteto smiling">
+                    </figure>
+                </div>
 
-    <video controls width="640" height="360">
-        <source src="videoplayback.mp4" type="video/mp4">
-    </video>
+                <div class="about-copy">
+                    <p class="section-label">About me</p>
+                    <h2 id="about-title">Building thoughtful digital experiences.</h2>
+                    <p>I'm John Kiteto, an IT student with a strong passion for software development. I enjoy exploring web development and programming, using code to solve practical, real-world problems. Always eager to learn new technologies, I bring a dedicated and hardworking mindset to every project and look forward to building digital solutions that make a meaningful impact.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <audio controls>
-        <source src="Degree.mp3" type="audio/mpeg">
-    </audio>
-
-    <img class="pic1" src="me2.jpeg" alt="personal image">
-
+    <script src="script.js"></script>
 </body>
-
 </html>
