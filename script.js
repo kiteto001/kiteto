@@ -31,8 +31,8 @@ const footerTemplate = `
         <p>IT student and aspiring software engineer building thoughtful digital solutions.</p>
       </div>
       <div class="footer-contact">
-        <a href="mailto:john@example.com">john@example.com</a>
-        <a href="tel:+254700000000">+254 700 000 000</a>
+        <a href="mailto:Johnkitman7@gmail.com">Johnkitman7@gmail.com</a>
+        <a href="tel:+254115843006">+254 115 843 006</a>
       </div>
       <div class="social-links" aria-label="Social media links">
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span aria-hidden="true">GH</span></a>
