@@ -1,18 +1,13 @@
-bulb1 = document.getElementById("bulb1")
-console.log(bulb1)
-bulb2 = document.getElementById("bulb2")
-console.log(bulb2)
-onButton = document.getElementById("onButton")
-console.log(onButton)
-offButton = document.getElementById("offButton")
-console.log(offButton)
+const bulb = document.getElementById("bulb1");
+const button = document.getElementById("onButton");
 
-onButton.addEventListener("click", function() {
-    bulb1.src = "bulbOn.gif"
-    bulb2.src = "bulbOff.gif"
-})
+// The bulb starts off, so the button offers to turn it on.
+let isBulbOn = false;
+button.textContent = "ON";
 
-offButton.addEventListener("click", function() {
-    bulb1.src = "bulbOff.gif"
-    bulb2.src = "bulbOn.gif"
-})
+button.addEventListener("click", function () {
+    // Change the bulb image, then update the same button's text.
+    isBulbOn = !isBulbOn;
+    bulb.src = isBulbOn ? "bulbOn.gif" : "bulbOff.gif";
+    button.textContent = isBulbOn ? "OFF" : "ON";
+});
